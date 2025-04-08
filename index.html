@@ -129,148 +129,123 @@
     <!-- Single Form for All Requests -->
     <div class="form-section">
         <h2>Request a Job</h2>
-        <form name="job-request" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="job-request">
-
-            <!-- User Details -->
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email or Phone</label>
-            <input type="text" id="email" name="email" required>
-
-            <!-- How It Works Description -->
-            <div class="how-it-works">
-                <h2>How It Works</h2>
-                <p>
-                    We believe everyone should have access to affordable help — and nobody should pay tradie rates for tasks that don’t need a license or a certificate. <br> 
-                    Here, <strong>you set the price</strong>. Just tell us what you need done, what it’s worth to you, and if it’s reasonable, we’ll do it — no fuss. <br>
-                    It could be yard work, a tip run, or just someone to chat to over a cuppa. No job too small. No quote too cheeky.
-                </p>
-            </div>
-
-            <!-- Other Services Section -->
-            <div class="other-services">
-                <h2>Other Services</h2>
-                <p>If you need something that’s not listed, feel free to let us know! We can help with almost anything!</p>
-                <label for="service-request">Describe the service you need:</label>
-                <textarea id="service-request" name="service-request" rows="4" placeholder="Tell us what you need..."></textarea>
-            </div>
-
-            <!-- "We Do Anything" Section -->
-            <div class="anything">
-                <h2>We Do Anything!</h2>
-                <p>Whether it's something unusual, a one-off job, or an ongoing service, we’re here to help. No task is too big or small — just get in touch with us and we’ll make it happen!</p>
-            </div>
-
-            <!-- Service Selection -->
-            <label for="service">Select a Service</label>
-            <select id="service" name="service" required>
-                <option value="">-- Select --</option>
-                <option>House Cleaning</option>
-                <option>House Cleaning</option>
-                <option>Garden Maintenance</option>
-                <option>Dog Walking</option>
-                <option>Haircuts at Home</option>
-                <option>Package Delivery</option>
-                <option>Grocery Shopping</option>
-                <option>Furniture Moving</option>
-                <option>Tip Runs</option>
-                <option>Shed Cleanouts</option>
-                <option>Car Washing</option>
-                <option>Window Cleaning</option>
-                <option>Lawn Mowing</option>
-                <option>Painting</option>
-                <option>Tech Help</option>
-                <option>Ironing & Laundry</option>
-                <option>Furniture Assembly</option>
-                <option>Errands</option>
-                <option>Moving House</option>
-                <option>Party Help</option>
-                <option>Pet Sitting</option>
-                <option>Company for Tea</option>
-                <option>Garden weeding and cleanup</option>
-                <option>Heavy lifting and moving furniture</option>
-                  <option>Tip runs and dump drop-offs</option>
-                  <option>Yard waste removal</option>
-                  <option>Digging garden beds</option>
-                  <option>Lawn mowing and edging</option>
-                  <option>Trimming overgrown bushes</option>
-                  <option>Spreading mulch or gravel</option>
-                  <option>Pressure washing driveways</option>
-                  <option>Removing dead plants or trees</option>
-                  <option>Loading/unloading trailers</option>
-                  <option>Fence painting</option>
-                  <option>Basic landscaping prep</option>
-                  <option>Exterior window cleaning</option>
-  
-                  <!-- Cleaning & Decluttering -->
-                  <option>Whole house deep cleaning</option>
-                  <option>Oven, fridge and microwave scrubbing</option>
-                  <option>Attic or shed cleanouts</option>
-                  <option>Decluttering entire rooms</option>
-                  <option>Sorting through old clothes or papers</option>
-                  <option>Garage cleanout and sweep</option>
-                  <option>Cleaning blinds and ceiling fans</option>
-                  <option>Wiping skirting boards and door frames</option>
-                  <option>Pet hair removal from upholstery</option>
-  
-                  <!-- Donation & Errand Runs -->
-                  <option>Taking bags to the op shop</option>
-                  <option>Washing, folding, and bagging clothes for donation</option>
-                  <option>Delivering donations to charities</option>
-                  <option>Helping move boxes into storage</option>
-                  <option>Recycling and e-waste drop-offs</option>
-                  <option>Post office and delivery runs</option>
-  
-                  <!-- Personal Help & Elderly Support -->
-                  <option>Changing bedding and flipping mattresses</option>
-                  <option>Helping with laundry and ironing</option>
-                  <option>Transport to appointments or shops</option>
-                  <option>Accompanying elderly clients on walks</option>
-                  <option>Hanging washing and bringing it in</option>
-                  <option>Feeding and watering pets</option>
-                  <option>Cleaning litter boxes and pet waste removal</option>
-                  <option>Basic grooming for pets (brushing, baths)</option>
-                  <option>Washing windows inside and out</option>
-  
-                  <!-- Handy Tasks & Misc Jobs -->
-                  <option>Furniture assembly (IKEA etc.)</option>
-                  <option>Removing cobwebs from high corners</option>
-                  <option>Installing curtain rods or shelves</option>
-                  <option>Fixing squeaky hinges and minor repairs</option>
-                  <option>Organizing pantries or garages</option>
-                  <option>Gutter clearing (single-storey)</option>
-                  <option>Rubbish bin cleaning</option>
-                  <option>Sweeping patios or front porches</option>
-                  <option>Basic car cleaning and vacuuming</option>
-                  <option>Unpacking after a move</option>
-  
-                  <!-- Odd Jobs & Requests -->
-                  <option>Picking up and delivering groceries</option>
-                  <option>Fetching firewood and stacking</option>
-                  <option>Putting up seasonal decorations</option>
-                  <option>Helping with party/event setup or cleanup</option>
-                  <option>Waiting at home for a tradie or delivery</option>
-                  <option>Dog walking and pet sitting</option>
-                  <option>Washing outdoor bins</option>
-                  <option>Washing balcony floors</option>
-                  <option>Helping carry items upstairs</option>
-                  <option>Hanging art or mirrors</option>
-                <!-- More options here -->
-            </select>
-            <br><br>
-            <label for="price">What are you willing to pay? ($)</label>
-            <input type="number" id="price" name="price" min="0" required>
-            <br><br>
-            <!-- Additional Details -->
-            <label for="details">Additional Details</label>
-            <textarea id="details" name="details" rows="5"></textarea>
-            <br><br>
-            <!-- Submit Button -->
-            <button type="submit">Submit Request</button>
+      
+        <!-- Netlify Form Start -->
+        <form name="job-request" method="POST" data-netlify="true" action="/thank-you.html">
+          <!-- Hidden input to identify the form -->
+          <input type="hidden" name="form-name" value="job-request" />
+      
+          <!-- User Details -->
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+      
+          <label for="email">Your Email or Phone</label>
+          <input type="text" id="email" name="email" required />
+      
+          <!-- Service Selection -->
+          <label for="service">Select a Service</label>
+          <select id="service" name="service" required>
+            <option value="">-- Select --</option>
+            <option>House Cleaning</option>
+            <option>Garden Maintenance</option>
+            <option>Dog Walking</option>
+            <option>Haircuts at Home</option>
+            <option>Package Delivery</option>
+            <option>Grocery Shopping</option>
+            <option>Furniture Moving</option>
+            <option>Tip Runs</option>
+            <option>Shed Cleanouts</option>
+            <option>Car Washing</option>
+            <option>Window Cleaning</option>
+            <option>Lawn Mowing</option>
+            <option>Painting</option>
+            <option>Tech Help</option>
+            <option>Ironing & Laundry</option>
+            <option>Furniture Assembly</option>
+            <option>Errands</option>
+            <option>Moving House</option>
+            <option>Party Help</option>
+            <option>Pet Sitting</option>
+            <option>Company for Tea</option>
+            <option>Garden weeding and cleanup</option>
+            <option>Heavy lifting and moving furniture</option>
+            <option>Tip runs and dump drop-offs</option>
+            <option>Yard waste removal</option>
+            <option>Digging garden beds</option>
+            <option>Lawn mowing and edging</option>
+            <option>Trimming overgrown bushes</option>
+            <option>Spreading mulch or gravel</option>
+            <option>Pressure washing driveways</option>
+            <option>Removing dead plants or trees</option>
+            <option>Loading/unloading trailers</option>
+            <option>Fence painting</option>
+            <option>Basic landscaping prep</option>
+            <option>Exterior window cleaning</option>
+            <option>Whole house deep cleaning</option>
+            <option>Oven, fridge and microwave scrubbing</option>
+            <option>Attic or shed cleanouts</option>
+            <option>Decluttering entire rooms</option>
+            <option>Sorting through old clothes or papers</option>
+            <option>Garage cleanout and sweep</option>
+            <option>Cleaning blinds and ceiling fans</option>
+            <option>Wiping skirting boards and door frames</option>
+            <option>Pet hair removal from upholstery</option>
+            <option>Taking bags to the op shop</option>
+            <option>Washing, folding, and bagging clothes for donation</option>
+            <option>Delivering donations to charities</option>
+            <option>Helping move boxes into storage</option>
+            <option>Recycling and e-waste drop-offs</option>
+            <option>Post office and delivery runs</option>
+            <option>Changing bedding and flipping mattresses</option>
+            <option>Helping with laundry and ironing</option>
+            <option>Transport to appointments or shops</option>
+            <option>Accompanying elderly clients on walks</option>
+            <option>Hanging washing and bringing it in</option>
+            <option>Feeding and watering pets</option>
+            <option>Cleaning litter boxes and pet waste removal</option>
+            <option>Basic grooming for pets (brushing, baths)</option>
+            <option>Washing windows inside and out</option>
+            <option>Furniture assembly (IKEA etc.)</option>
+            <option>Removing cobwebs from high corners</option>
+            <option>Installing curtain rods or shelves</option>
+            <option>Fixing squeaky hinges and minor repairs</option>
+            <option>Organizing pantries or garages</option>
+            <option>Gutter clearing (single-storey)</option>
+            <option>Rubbish bin cleaning</option>
+            <option>Sweeping patios or front porches</option>
+            <option>Basic car cleaning and vacuuming</option>
+            <option>Unpacking after a move</option>
+            <option>Picking up and delivering groceries</option>
+            <option>Fetching firewood and stacking</option>
+            <option>Putting up seasonal decorations</option>
+            <option>Helping with party/event setup or cleanup</option>
+            <option>Waiting at home for a tradie or delivery</option>
+            <option>Dog walking and pet sitting</option>
+            <option>Washing outdoor bins</option>
+            <option>Washing balcony floors</option>
+            <option>Helping carry items upstairs</option>
+            <option>Hanging art or mirrors</option>
+          </select>
+      
+          <br /><br />
+      
+          <!-- Price Input -->
+          <label for="price">What are you willing to pay? ($)</label>
+          <input type="number" id="price" name="price" min="0" required />
+      
+          <br /><br />
+      
+          <!-- Additional Details -->
+          <label for="details">Additional Details</label>
+          <textarea id="details" name="details" rows="5"></textarea>
+      
+          <br /><br />
+      
+          <!-- Submit -->
+          <button type="submit">Submit Request</button>
         </form>
-    </div>
+      </div>
+      
 
 </body>
 </html>
